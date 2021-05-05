@@ -9,22 +9,16 @@ programa {
 	inteiro anos
 	inteiro meses
 	inteiro dias
-
-		escreva("Insira seu nome: ")
-		leia(nomePessoa)
-
-		escreva("Insira sua idade em anos: ")
+	
+		escreva("Digite a idade da pessoa em anos: ")
 		leia(anos)
 
-		escreva("Insira sua idade em meses: ")
-		leia(meses)
+		anos = (anos * 1)
+ 		meses = (anos * 12)
+ 		dias = (anos * 365)
 
-		escreva("Insira sua idade em dias: ")
-		leia(dias)
-	
-			dias = ((anos*365)+(meses*30)+dias)
-
-		escreva(nomePessoa + ", sua idade em dias é " + dias)
+		
+ 		escreva("A idade da pessoa é "+anos+" ano(s), ou "+meses+" mes(es) ou "+dias+" dia(s)")
 		
 		
 					
@@ -36,7 +30,7 @@ programa {
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 367; 
+ * @POSICAO-CURSOR = 304; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
