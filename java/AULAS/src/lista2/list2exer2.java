@@ -46,7 +46,6 @@ public class list2exer2 {
 			System.out.printf("%d %d %d", numero3, numero1, numero2);
 		}
 		
-		
 	}
 
 }
