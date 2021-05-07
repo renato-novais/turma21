@@ -26,8 +26,6 @@ public class list2exer4 {
 		} else {
 			System.out.printf("O número %.0f é ímpar e elevado ao quadrado é %.0f", numero, Math.pow(numero, 2));
 		}
-		
-	
 
 	}
 
