@@ -20,7 +20,14 @@ public class list1exer6 {
 		double y1 = 0;
 		double y2 = 0;
 		
-		
+		System.out.println("Insira o valor x1");
+		x1 = leia.nextDouble();
+		System.out.println("Insira o valor x2");
+		x2 = leia.nextDouble();
+		System.out.println("Insira o valor y1");
+		y1 = leia.nextDouble();
+		System.out.println("Insira o valor y1");
+		y1 = leia.nextDouble();
 	}
 
 }

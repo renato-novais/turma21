@@ -39,9 +39,8 @@ public class lista3exer3 {
 					System.out.println();
 				}	
 		}
-		System.out.println("--------------------------------------------");
+		System.out.println("----------------------------------------");
 		System.out.printf("Total de pessoas com menos de 21 anos: %d \n",pessoasMenos21);
 		System.out.printf("Total de pessoas com mais de 50 anos: %d \n",pessoasMais50);
-		
 	}
 }
