@@ -24,7 +24,7 @@ public class Cliente {
 		return numeroCadastro;
 	}
 
-	public void setId(int id) {
+	public void setNumeroCadastro(int numeroCadastro) {
 		this.numeroCadastro = numeroCadastro;
 	}
 

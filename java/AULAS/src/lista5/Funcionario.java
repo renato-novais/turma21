@@ -18,12 +18,12 @@ public class Funcionario {
 		System.out.printf("\nCódigo: %d\nNome: %s\nCPF: %s\nSalario: %.2f\n", numeroCarteira, nome, cpf, salario);
 	}
 
-	public int getId() {
+	public int getNumeroCarteira() {
 		return numeroCarteira;
 	}
 
-	public void setId(int id) {
-		this.id = numeroCarteira;
+	public void setNumeroCarteira(int numeroCarteira) {
+		this.numeroCarteira = numeroCarteira;
 	}
 
 	public String getNome() {
