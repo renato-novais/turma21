@@ -11,8 +11,8 @@ public class OiMundo {
 		//cadeia nome
 		//escreva(Digite o nome:"
 		//leia(nome)
-		
 		//instancia = criar um teclado
+		
 		Scanner leia = new Scanner(System.in);
 		
 		String nome; //CADEIA
@@ -21,6 +21,7 @@ public class OiMundo {
 		double salario = 1999.25; //DREAL
 		char op = 'S'; //CARACTER
 		
+		System.out.println("Olá, mundo!");
 		System.out.println("Digite o nome: ");
 		nome = leia.next();
 		//escreva("Digite um numero: ")

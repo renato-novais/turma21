@@ -1,7 +1,6 @@
 package programas;
 
 import java.util.Scanner;
-
 import classes.Mestrado;
 
 public class ProjetoEscola {
@@ -65,12 +64,13 @@ public class ProjetoEscola {
 			
 			for(int i =0; i<10; i++) {
 				
-				System.out.printf("\nMOVIMENTO %d - I - incluir nota ou R - retirar nota:",i+1);
+				System.out.printf("\nMOVIMENTO %d - [I] incluir nota ou [R] retirar nota:",i+1);
 				opc = leiaS.next().toUpperCase().charAt(0);
 				System.out.printf("Crédito atual: %.1f",mestre1.getCreditoMestrado());
 				System.out.printf("\nTotal atual: %.1f ",mestre1.getCreditoMestrado()); 
 				System.out.printf("\nValor movimento: ");
 				valor = leiaI.nextDouble();
+				System.out.printf("\nDeseja inserir créditos?");
 				
 			    if(opc == 'I') mestre1.adicionarNota(valor);
 			    else if (opc == 'R') mestre1.tirarNota(valor);	

@@ -20,7 +20,7 @@ public class Estudante {
         this.matricula = matricula;
         this.cpf = cpf;
     }
-
+    	
     //getters and setters:
 
     public Estudante(int matricula, String cpf, double pontos, boolean status) {

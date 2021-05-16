@@ -19,8 +19,7 @@ package exercicios;
 
 import java.util.Scanner;
 
-public class AuxilioEmergencialIR { //Imposto de renda
-
+public class AuxilioEmergencialIR { 
 	public static void main(String[] args) {
 		
 		Scanner leia = new Scanner(System.in);
@@ -28,7 +27,7 @@ public class AuxilioEmergencialIR { //Imposto de renda
 		String nomeContribuinte;
 		char genero;
 		double emergencial;
-		double salarioBruto
+		double salarioBruto;
 		
 		
 
