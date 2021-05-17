@@ -30,8 +30,6 @@ public class list2exer2 {
 		System.out.print("Digite o terceiro número: ");
 		numero3 = leia.nextInt();
 		
-		
-		
 		if(numero3 >= numero2 && numero2 >= numero1) {
 			System.out.printf("%d %d %d", numero1, numero2, numero3);
 		} else if(numero2 >= numero3 && numero3 >= numero1) {

@@ -19,6 +19,7 @@ public class list1exer6 {
 		double x2 = 0;
 		double y1 = 0;
 		double y2 = 0;
+		double d = 0;
 		
 		System.out.println("Insira o valor x1");
 		x1 = leia.nextDouble();
@@ -27,7 +28,10 @@ public class list1exer6 {
 		System.out.println("Insira o valor y1");
 		y1 = leia.nextDouble();
 		System.out.println("Insira o valor y1");
-		y1 = leia.nextDouble();
+		y2 = leia.nextDouble();
+		 
+		d = Math.sqrt((Math.pow(x2 - x1,2)) + (Math.pow(y2 - y1,2)));
+		System.out.printf("d = %f",d);
 	}
 
 }
