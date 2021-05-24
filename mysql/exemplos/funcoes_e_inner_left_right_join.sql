@@ -62,5 +62,5 @@ from tb_produtos left join tb_categoria on  tb_categoria.id = tb_produtos.catego
 select nome, preco, qtProduto, tb_categoria.descricao as descricao_da_categoria ,tb_categoria.ativo as estado_da_categoria 
 from tb_produtos right join tb_categoria on  tb_categoria.id = tb_produtos.categoria_id;
 
-drop database db_cidade_das_carnes
+drop database db_cidade_das_carnes;
 
