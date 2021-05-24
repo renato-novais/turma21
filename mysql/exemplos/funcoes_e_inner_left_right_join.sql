@@ -47,15 +47,20 @@ select * from tb produtos where nome like "%A%"; -- pesquisa e traz tudo que há
 select * from tb_produtos where preco in (20,30,40); -- pesquisa e traz todos os dados que estiverem entre parenteses
 select * from tb_produtos where preco between 20 and 40; -- pesquisa e traz todos os dados que está entre os valores
 select count(*) from tb_produtos; -- contagem de itens cadastrados
-select avg (preco) as media from tb_produtos; -- calcula e mostra media da categoria solicitada, "as" muda o nome da categoria que realiza a operação
-select sum (preco) from tb_produtos; -- calcula e mostra a soma de dete da categoria solicitada
+select avg(preco) as media from tb_produtos; -- calcula e mostra media da categoria solicitada, "as" muda o nome da categoria que realiza a operação
+select sum(preco) from tb_produtos; -- calcula e mostra a soma de dete da categoria solicitada
 
 -- sintaxe para inner join, une informações em comum de ambas tabelas
-select nome, preco, qtProduto, tb_categoria.descricao as descricao_da_categoria ,tb_categoria.ativo as estado_da_categoria from tb_produtos inner join tb_categoria on  tb_categoria.id = tb_produtos.categoria_id;
+select nome, preco, qtProduto, tb_categoria.descricao as descricao_da_categoria ,tb_categoria.ativo as estado_da_categoria 
+from tb_produtos inner join tb_categoria on  tb_categoria.id = tb_produtos.categoria_id;
 
 -- sintaxe para left join, une informações em comum de ambas tabelas e trás informações não relacionadas da esquerda
-select nome, preco, qtProduto, tb_categoria.descricao as descricao_da_categoria ,tb_categoria.ativo as estado_da_categoria from tb_produtos left join tb_categoria on  tb_categoria.id = tb_produtos.categoria_id;
+select nome, preco, qtProduto, tb_categoria.descricao as descricao_da_categoria ,tb_categoria.ativo as estado_da_categoria 
+from tb_produtos left join tb_categoria on  tb_categoria.id = tb_produtos.categoria_id;
 
--- sinteaxe para right join, une informações em comum de ambas tabelas e trás informações não relacionadas da direita
-select nome, preco, qtProduto, tb_categoria.descricao as descricao_da_categoria ,tb_categoria.ativo as estado_da_categoria from tb_produtos right join tb_categoria on  tb_categoria.id = tb_produtos.categoria_id;
+-- sintaxe para right join, une informações em comum de ambas tabelas e trás informações não relacionadas da direita
+select nome, preco, qtProduto, tb_categoria.descricao as descricao_da_categoria ,tb_categoria.ativo as estado_da_categoria 
+from tb_produtos right join tb_categoria on  tb_categoria.id = tb_produtos.categoria_id;
+
+drop database db_cidade_das_carnes
 
