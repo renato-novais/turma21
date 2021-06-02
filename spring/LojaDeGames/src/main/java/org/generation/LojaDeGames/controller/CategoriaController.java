@@ -2,6 +2,8 @@ package org.generation.LojaDeGames.controller;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.generation.LojaDeGames.model.Categoria;
 import org.generation.LojaDeGames.repository.CategoriaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,12 +44,12 @@ public class CategoriaController {
 	}
 
 	@PostMapping
-	public ResponseEntity<Categoria> post(@RequestBody Categoria categoria) {
+	public ResponseEntity<Categoria> post(@RequestBody @Valid Categoria categoria) {
 		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(categoria));
 	}
 
 	@PutMapping
-	public ResponseEntity<Categoria> put (@RequestBody Categoria categoria){
+	public ResponseEntity<Categoria> put (@RequestBody @Valid Categoria categoria){
 		return ResponseEntity.ok(repository.save(categoria));
 	}
 	
