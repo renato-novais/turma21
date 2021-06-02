@@ -53,5 +53,4 @@ public class ProdutoController {
 	public void Delete(@PathVariable long id) {
 		repository.deleteById(id);
 	}
-
 }
