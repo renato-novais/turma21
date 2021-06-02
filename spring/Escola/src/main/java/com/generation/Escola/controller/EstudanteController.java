@@ -37,7 +37,6 @@ public class EstudanteController {
 	
 	@GetMapping("/{id}") // busca pela variável em {variavel de transporte}
 	public ResponseEntity<Estudante> getById(@PathVariable long id) { // PathVariable conecta a variavel de transporte para o parametro do método, envia informação pra variavel do caminho
-		
 		return repository.findById(id).map(resposta -> ResponseEntity.ok(resposta)) // .map faz mapeamento do resultado da busca da variavel de transporte 
 				.orElse(ResponseEntity.notFound().build());
 	}
